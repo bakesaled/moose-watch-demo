@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.layoutService.loadFromFileSystem(
-      new LayoutModel('5c3d0d14-f5d1-4061-92d8-9df65486ee57', 'basic-layout'), './assets/')
+      new LayoutModel('5c3d0d14-f5d1-4061-92d8-9df65486ee57', 'starter-layout'), './assets/')
       .subscribe((result) => {
         localStorage.setItem(result.id, JSON.stringify(result));
       this.layoutModel = result;
